@@ -60,6 +60,11 @@ echo "Hello World"
 chmod u=rwx,g=rw,o=r
 ```
 
+**chown** - Used to change the owner of a file
+```
+chown glowickc
+```
+
 **pwd** - Displays the present working directory
 ```
 pwd
@@ -72,7 +77,7 @@ mkdir Passports
 
 **mv** -Moves a file and or copies a file to a new file to change the name of the file
 ```
-mv file1 NamedFile
+mv file1 NewName
 mv NamedFile/ HOME/
 ```
 
