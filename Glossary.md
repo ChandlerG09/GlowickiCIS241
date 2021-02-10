@@ -94,3 +94,45 @@ file TestFile.txt
 **mount** - used to retrieve files from a USB
 
 **unmount** - unmounts a mount already made
+
+**tr** - allows us to translate or delete a character
+```
+#Deletes all periods and commas from the specified file name
+cat fileName | tr -d '.,'
+
+#Replaces spaces with new Lines
+cat fileName | tr ' ' '\n'
+```
+
+**cat -A** - Attempts to give a character representation of every byte
+```
+cat -A fileName
+```
+
+**sort** - used to sort words in a file
+```
+#Default Sort
+sort fileName
+
+#Sort by ascii value
+cat fileName | sort
+
+#Sort by numeric value
+cat fileName | sort -n
+
+#Sort from a specific location seperated by commas
+cat fileName | sort -t','
+```
+
+**uniq -c** - Used to count the number of times a word or value is used duplicated lines only
+```
+cat fileName | sort | uniq -c
+```
+
+**wc** - displays number of lines words and characters in a file
+```
+wc fileName
+
+#Display only the number of lines
+wc -l fileName
+```
