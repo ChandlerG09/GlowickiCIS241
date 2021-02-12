@@ -136,3 +136,29 @@ wc fileName
 #Display only the number of lines
 wc -l fileName
 ```
+
+**Globbing** - used to expand multiple things at once
+```
+#Opens all files that have any string
+ls *
+
+#Opens all files that start with 'b'
+ls b*
+
+#Opens all files that end with 'b'
+ls *b
+
+#Opens everything that has an 'a' in it
+ls *a*
+
+#Opens everything that starts with a s only one character in the middle and a t at the end
+ls s?t
+
+#Opens all 3 letter words
+ls ???
+
+#Opens all things that end with a t or an n
+ls ??[t,n]
+```
+
+
