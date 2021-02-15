@@ -161,4 +161,47 @@ ls ???
 ls ??[t,n]
 ```
 
+**Regular Expressions** Used to search documents similar to globbinh
+```
+#Search for any 3 letter word that has an 'a' in the middle
+.a.
+
+#Search for 'l' or 'an'
+l|n
+
+#Search for 'in' or 'en'
+[i|e]n
+
+#Search for a meta character (use a backslash)
+\.
+\[]
+\()
+
+#Search for anything that starts with 'the' including all the 'the's
+the.?
+
+#Search for digits
+[\d]
+
+#Search for 2 or more digits
+[\d]+
+
+#Search for anything 0-9 or a-z
+[0-9]+|[a-z]
+
+#Search for whitespace
+[\s]
+
+#Search for anything that starts with 'the' but ends with anything
+[\s][t|T]he[a-z]*[\s]
+
+#Search for a word that has 2 'n' in the word (next to eachother)_
+n{2}
+
+#Capture only the word 'the' with word boundaries
+\bthe\b
+
+
+
+
 
