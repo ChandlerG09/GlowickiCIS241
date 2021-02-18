@@ -201,7 +201,23 @@ n{2}
 #Capture only the word 'the' with word boundaries
 \bthe\b
 
+```
 
+**Grep** - Used for sorting and finding within documents
+```
+#Search for "Hell There in filename.txt
+Grep "Hello There" filename.txt
 
+#Search for a regular expression
+Grep -E \([0-9]{3}\)
 
+#Return the line number that "hello is found on
+Grep -n "hello"
+
+#Return matches only of the regular expression
+Grep -E -o \(\d{3}\)
+
+#Return with word boundaries
+
+test
 
