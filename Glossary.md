@@ -218,4 +218,29 @@ Grep -n "hello"
 Grep -E -o \(\d{3}\)
 
 #Return with word boundaries
+grep -E "\bHello\b"
+
+#Return only the line that has only the word Alice in it
+grep -E "^Alice$"
+```
+
+**sed** - (Stream Editor) Used for manipulating and changing strings (Change "e"s to "u"s, get rid of new lines etc)
+```
+#Replace Alice with Herbert
+sed 's/Alice/Herbert/g' fileName
+
+#Sed Syntax
+sed -E '[ADDRESS]COMMAND[OPTIONS]
+
+#Copy to pattern from hold space
+sed 'g' (overwrite)
+sed 'G' (append)_
+
+#Copy from pattern to hold
+sed 'h' (overwrite)
+sed 'H' (append)
+```
+
+
+
 
