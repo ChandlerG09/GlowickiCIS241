@@ -239,6 +239,20 @@ sed 'G' (append)_
 #Copy from pattern to hold
 sed 'h' (overwrite)
 sed 'H' (append)
+
+#Supress output
+sed -n '[command]'
+
+#Print lines 1-4
+sed -n '1,4 p' fileName
+
+#Print every other line
+sed -n '1~2 p' fileName
+
+#Double space the document
+sed ''G fileName
+
+
 ```
 
 
