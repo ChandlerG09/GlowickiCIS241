@@ -255,6 +255,16 @@ sed ''G fileName
 
 ```
 
+**awk** - Used for strucutred documents
+```
+#Print the first field
+awk '{ print $1}' fileName
+
+#Print all fields
+awk ' {print $0} fileName
+
+#Print the last field
+awk ' {print $NF }' fileName
 
 
 
